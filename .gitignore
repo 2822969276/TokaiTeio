@@ -1,0 +1,7 @@
+build/
+site/
+__pycache__/
+*.pdf
+node_modules/
+package.json
+package-lock.json
