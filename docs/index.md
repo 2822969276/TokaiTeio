@@ -1,5 +1,5 @@
 # Welcome to MkDocs
-[toc]
+
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ## Commands
@@ -15,3 +15,7 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
+
+[内置界面](index.md)
+[内置界面](index.md)
+[内置界面](index.md)
