@@ -9,5 +9,43 @@ copyright: # (版权声明相关文本)
 # 下面的配置代码仅作示范。注意配置的页面对应的 MarkDown 源码文件必须存在。
 nav:
   - 主页: index.md
-  - 章节列表: test.md
-  - 关于我: about.md
+  - 章节列表: 
+    - 列表1: test.md
+    - 关于我: about.md
+  - 测试: 
+    - c: 
+      - 测试1: about.md
+  - GitHub: https://github.com/2822969276/TokaiTeio
+
+plugins:
+  - search
+  - macros
+  - print-site
+theme:
+  name: mkdocs
+  palette:
+    primary: blue grey
+  font:
+    code: Noto Sans Simplified Chinese
+  features:
+    - search.suggest
+    - search.highlight
+  hljs_languages:
+    - yaml
+    - rust
+    - c++
+    - shell
+    - c
+    - java
+  locate: 
+    - zh_CN
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+markdown_extensions:
+  - extra
+  - tables
+  - toc
+  - fenced_code
+  - sane_lists
+  - smarty
+  - pymdownx.arithmatex
