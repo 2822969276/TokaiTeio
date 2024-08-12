@@ -5,6 +5,12 @@ on:
   push:
     branches: 
       - master # 监测的分支
+    paths-ignore:
+      - '.gitignore'
+      - 'README.md'
+      - 'examples'
+      - 'CMakeLists.txt'
+      - 'misc'
 jobs:
   deploy:
     runs-on: ubuntu-latest # 拉去虚拟环境镜像
@@ -14,4 +20,4 @@ jobs:
         with:
           python-version: 3.x
       - run: pip install -r requirements.txt # 虚拟环境安装依赖
-      - run: mkdocs gh-deploy # 会在虚拟环境部署站点，无需本地使用此命令
+      - run: mkdocs gh-deploy --force # 会在虚拟环境部署站点，无需本地使用此命令
