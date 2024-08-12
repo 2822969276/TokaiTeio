@@ -8,6 +8,6 @@ copyright: # (版权声明相关文本)
 # nav 区域指定站点上能看到的页面。
 # 下面的配置代码仅作示范。注意配置的页面对应的 MarkDown 源码文件必须存在。
 nav:
-  - 主页: index.md
-  - 关于我: about.md
-  - 章节列表：test.md
+  - 主页: ./docs/index.md
+  - 章节列表：./docs/test.md
+  - 关于我: ./docs/about.md
