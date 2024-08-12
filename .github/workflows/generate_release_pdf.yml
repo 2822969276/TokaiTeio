@@ -4,7 +4,7 @@ name: Generate Release PDF
 on:
   push:
     branches: 
-      - master # 监测的分支
+      - main # 监测的分支
     paths-ignore:
       - '.gitignore'
       - 'README.md'
