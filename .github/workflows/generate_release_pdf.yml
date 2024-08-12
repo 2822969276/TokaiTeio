@@ -4,13 +4,7 @@ name: Generate Release PDF
 on:
   push:
     branches: 
-      - main # 监测的分支
-    paths-ignore:
-      - '.gitignore'
-      - 'README.md'
-      - 'examples'
-      - 'CMakeLists.txt'
-      - 'misc'
+      - master # 监测的分支
 jobs:
   deploy:
     runs-on: ubuntu-latest # 拉去虚拟环境镜像
