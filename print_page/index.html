@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>列表1 - 我的第一个站点</title>
+        <title>Print Site - 我的第一个站点</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/fontawesome.min.css" rel="stylesheet">
         <link href="../css/brands.min.css" rel="stylesheet">
@@ -33,7 +33,13 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/c.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/java.min.js"></script>
         <script>hljs.highlightAll();</script> 
-    </head>
+    
+        <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            remove_material_navigation();remove_mkdocs_theme_navigation();generate_toc();
+        })
+        </script>
+        </head>
 
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
@@ -52,11 +58,11 @@
                                 <a href=".." class="nav-link">主页</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">章节列表</a>
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">章节列表</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="./" class="dropdown-item active" aria-current="page">列表1</a>
+    <a href="../test/" class="dropdown-item">列表1</a>
 </li>
                                     
 <li>
@@ -90,16 +96,6 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li class="nav-item">
-                                <a rel="prev" href=".." class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="../about/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
                     </ul>
                 </div>
             </div>
@@ -118,7 +114,25 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#_1" class="nav-link">这是一个测试</a>
+            <li class="nav-item" data-bs-level="0"><a href="#" class="nav-link">1. 主页</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="0"><a href="#section-章节列表" class="nav-link">I. 章节列表</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="1"><a href="#test" class="nav-link">2. 列表1</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="1"><a href="#about" class="nav-link">3. 关于我</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="0"><a href="#section-测试" class="nav-link">II. 测试</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -127,8 +141,57 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="_1">这是一个测试</h1>
-<p>真的只是一个测试用的仓库</p></div>
+<div id="print-site-page" class="print-site-enumerate-headings print-site-enumerate-figures">
+        <section class="print-page">
+            <div id="print-page-toc" data-toc-depth="3">
+                <nav role='navigation' class='print-page-toc-nav'>
+                <h1 class='print-page-toc-title'>Table of Contents</h1>
+                </nav>
+            </div>
+        </section>
+        <section class="print-page" id="index"><h1 id="index-welcome-to-mkdocs">Welcome to MkDocs</h1>
+<p>[toc]
+For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
+<h2 id="index-commands">Commands</h2>
+<ul>
+<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
+<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
+<li><code>mkdocs build</code> - Build the documentation site.</li>
+<li><code>mkdocs -h</code> - Print help message and exit.</li>
+</ul>
+<h2 id="index-project-layout">Project layout</h2>
+<pre><code>mkdocs.yml    # The configuration file.
+docs/
+    index.md  # The documentation homepage.
+    ...       # Other markdown pages, images and other files.
+</code></pre></section>
+                        <h1 class='nav-section-title' id='section-章节列表'>
+                            章节列表 <a class='headerlink' href='#section-章节列表' title='Permanent link'>↵</a>
+                        </h1>
+                        <section class="print-page" id="test"><h1 id="test-_1">这是一个测试</h1>
+<p>真的只是一个测试用的仓库</p></section><section class="print-page" id="about"><h1 id="about-_1">关于我</h1>
+<h2 id="about-_2">我叫什么</h2>
+<p>TokaiTeio</p>
+<h2 id="about-_3">我的身份</h2>
+<p>士子</p>
+<h2 id="about-_4">我来自哪里</h2>
+<p>湖南衡阳</p>
+<p><a href="#.">内置界面</a></p></section><h1 class='nav-section-title-end'>Ended: 章节列表</h1>
+                        <h1 class='nav-section-title' id='section-测试'>
+                            测试 <a class='headerlink' href='#section-测试' title='Permanent link'>↵</a>
+                        </h1>
+                        
+                        <h2 class='nav-section-title' id='section-c'>
+                            c <a class='headerlink' href='#section-c' title='Permanent link'>↵</a>
+                        </h2>
+                        <section class="print-page" id="about"><h1 id="about-_1">关于我</h1>
+<h2 id="about-_2">我叫什么</h2>
+<p>TokaiTeio</p>
+<h2 id="about-_3">我的身份</h2>
+<p>士子</p>
+<h2 id="about-_4">我来自哪里</h2>
+<p>湖南衡阳</p>
+<p><a href="#.">内置界面</a></p></section><h1 class='nav-section-title-end'>Ended: c</h1><h1 class='nav-section-title-end'>Ended: 测试</h1></div></div>
             </div>
         </div>
 
@@ -138,7 +201,7 @@
         </footer>
         <script src="../js/bootstrap.bundle.min.js"></script>
         <script>
-            var base_url = "..",
+            var base_url = "/",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="../js/base.js"></script>

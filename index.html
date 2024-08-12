@@ -17,7 +17,21 @@
         <link href="css/base.css" rel="stylesheet">
         <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
         <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <link href="css/print-site-enum-headings1.css" rel="stylesheet">
+        <link href="css/print-site-enum-headings2.css" rel="stylesheet">
+        <link href="css/print-site-enum-headings3.css" rel="stylesheet">
+        <link href="css/print-site-enum-headings4.css" rel="stylesheet">
+        <link href="css/print-site-enum-headings5.css" rel="stylesheet">
+        <link href="css/print-site-enum-headings6.css" rel="stylesheet">
+        <link href="css/print-site.css" rel="stylesheet">
+        <link href="css/print-site-mkdocs.css" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/rust.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/c++.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/shell.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/c.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/java.min.js"></script>
         <script>hljs.highlightAll();</script> 
     </head>
 
@@ -35,13 +49,38 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="nav-item">
-                                <a href="/docs/index.md" class="nav-link">主页</a>
+                                <a href="." class="nav-link active" aria-current="page">主页</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">章节列表</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="test/" class="dropdown-item">列表1</a>
+</li>
+                                    
+<li>
+    <a href="about/" class="dropdown-item">关于我</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">测试</a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">c</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="about/" class="dropdown-item">关于我</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
                             </li>
                             <li class="nav-item">
-                                <a href="test/" class="nav-link">章节列表</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="about/" class="nav-link">关于我</a>
+                                <a href="https://github.com/2822969276/TokaiTeio" class="nav-link">GitHub</a>
                             </li>
                         </ul>
 
@@ -51,6 +90,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li class="nav-item">
+                                <a rel="prev" class="nav-link disabled">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="test/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -87,7 +136,8 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
+<p>[toc]
+For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
 <h2 id="commands">Commands</h2>
 <ul>
 <li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
@@ -114,6 +164,8 @@ docs/
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="js/base.js"></script>
+        <script src="js/print-site.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script src="search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
@@ -182,5 +234,5 @@ docs/
 
 <!--
 MkDocs version : 1.6.0
-Build Date UTC : 2024-08-12 15:45:15.346113+00:00
+Build Date UTC : 2024-08-12 16:33:09.091325+00:00
 -->
