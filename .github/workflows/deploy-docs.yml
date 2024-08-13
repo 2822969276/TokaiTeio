@@ -17,7 +17,7 @@ jobs:
           python-version: 3.x
 
       - name: Install MkDocs
-      - run: pip install -r requirements.txt # 虚拟环境安装依赖
+      - run: pip install mkdocs # 虚拟环境安装依赖
 
       - name: Build and deploy
       - env: GITHUB_TOKEN: ${{secrets.GITHUB_TIKEN}}
