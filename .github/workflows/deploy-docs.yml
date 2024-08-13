@@ -20,5 +20,4 @@ jobs:
       - run: pip install mkdocs # 虚拟环境安装依赖
 
       - name: Build and deploy
-      - env: GITHUB_TOKEN: ${{secrets.GITHUB_TIKEN}}
       - run: mkdocs gh-deploy --force # 会在虚拟环境部署站点，无需本地使用此命令
